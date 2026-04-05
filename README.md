@@ -83,5 +83,10 @@ Edit variables at the top of `training_scripts/run_flower_simulation_router.sh`.
 ## Citation
 
 ```bibtex
---
+@article{talasso2026task,
+  title={Task-Centric Personalized Federated Fine-Tuning of Language Models},
+  author={Talasso, Gabriel U and Kurmanji, Meghdad and de Souza, Allan M and Lane, Nicholas D and Villas, Leandro A},
+  journal={arXiv preprint arXiv:2604.00050},
+  year={2026}
+}
 ```
