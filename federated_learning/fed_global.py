@@ -2,7 +2,6 @@ import random
 import numpy as np
 import torch
 from federated_learning.fed_clustered import calculate_similarity, make_clusters, calculate_similarity_pair
-from federated_learning.fed_personalized import get_adapter
 
 def get_clients_this_round(fed_args, script_args, round):
     if (fed_args.fed_alg).startswith('local'):
@@ -157,7 +156,7 @@ def global_aggregate(fed_args, script_args, global_dict, local_dict_list,
 
             return cluster_agg_models, global_auxiliary, idx
 
-    elif fed_args.fed_alg in ['router', 'router_oracle']:
+    elif fed_args.fed_alg in ['router']:
 
         n_clusters = fed_args.global_n_clusters
 

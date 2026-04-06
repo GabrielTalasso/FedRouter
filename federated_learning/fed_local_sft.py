@@ -55,16 +55,7 @@ def get_fed_local_sft_trainer(model, tokenizer, training_args, local_dataset, fo
                 data_collator=data_collator,
                 #packing=packing,
             )
-    elif (fed_args.fed_alg == 'feddpa'):
-        trainer = SFTTrainer(
-            model=model,
-            tokenizer=tokenizer,
-            args=training_args,
-            train_dataset=local_dataset,
-            formatting_func=formatting_prompts_func,
-            data_collator=data_collator,
-            #packing=packing,
-        )
+    
     else:
         raise ValueError(f'Unsupported `fed_alg`: {fed_args.fed_alg}')
     return trainer
