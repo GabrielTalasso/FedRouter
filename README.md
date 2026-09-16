@@ -2,6 +2,8 @@
 
 # Task-Centric Personalized Federated Fine-Tuning of Language Models
 
+Accepted in 35th International Conference on Artificial Neural Networks (ICANN 2026)
+
 ## Abstract
  Federated Learning (FL) has emerged as a promising technique for training language models on distributed and private datasets of diverse tasks. However, aggregating models trained on heterogeneous tasks often degrades the overall performance of individual clients. To address this issue, Personalized FL (pFL) aims to create models tailored for each client’s data distribution. Although these approaches improve local performance, they usually lack robustness in two aspects: (i) generalization: when clients must make predictions on unseen tasks, or face changes in their data distributions, and (ii) intra-client tasks interference: when a single client's data contains multiple distributions that may interfere with each other during local training. To tackle these two challenges, we propose FedRouter, a clustering-based pFL that builds specialized models for each task rather than for each client. FedRouter uses adapters to personalize models by employing two clustering mechanisms to associate adapters with specific tasks. A local clustering that associate adapters with task data samples and a global one that associates similar adapters from different clients to construct task-centric personalized models. Additionally, we propose an evaluation router mechanism that routes test samples to the best adapter based on the created clusters. Experiments comparing our method with existing approaches across a multitask dataset, FedRouter demonstrate strong resilience in these challenging scenarios performing up to 6.1% relatively better under tasks interference and up to 136% relative improvement under generalization evaluation
 
@@ -83,10 +85,27 @@ Edit variables at the top of `training_scripts/run_flower_simulation_router.sh`.
 ## Citation
 
 ```bibtex
-@article{talasso2026task,
-  title={Task-Centric Personalized Federated Fine-Tuning of Language Models},
-  author={Talasso, Gabriel U and Kurmanji, Meghdad and de Souza, Allan M and Lane, Nicholas D and Villas, Leandro A},
-  journal={arXiv preprint arXiv:2604.00050},
-  year={2026}
+@InProceedings{10.1007/978-3-032-38410-2_14,
+author="Talasso, Gabriel U.
+and Kurmanji, Meghdad
+and de Souza, Allan M.
+and Lane, Nicholas D.
+and Villas, Leandro A.",
+editor="Pasa, Luca
+and Lintas, Alessandra
+and Tetko, Igor V.
+and Micheli, Alessio
+and Navarin, Nicol{\`o}
+and Villa, Alessandro E. P.
+and Tortorella, Domenico
+and Polato, Mirko",
+title="Task-Centric Personalized Federated Fine-Tuning of Language Models",
+booktitle="Artificial Neural Networks and Machine Learning -- ICANN 2026",
+year="2027",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="169--181",
+isbn="978-3-032-38410-2"
 }
+
 ```
