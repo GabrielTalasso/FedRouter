@@ -3,6 +3,7 @@
 # Task-Centric Personalized Federated Fine-Tuning of Language Models
 
 [Preprint Version on arXiv](https://arxiv.org/abs/2604.00050)
+
 [Accepted in 35th International Conference on Artificial Neural Networks (ICANN 2026)](https://link.springer.com/chapter/10.1007/978-3-032-38410-2_14)
 
 ## Abstract
